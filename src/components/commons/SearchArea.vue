@@ -19,7 +19,7 @@ export default {
   name: "SearchArea",
   data() {
     return {
-      dataShared
+      dataShared,
       // Da qui passo i dati all'observable dataShared che utilizzo come posto condiviso per immagazzinare le info dell'oggetto
       //(avrei anche potutti salvarli in una variabile qui. Ma in qesto modo e' piu' semplice prendere i dati anche da altri componenti senza il problema delle parentele)
     }

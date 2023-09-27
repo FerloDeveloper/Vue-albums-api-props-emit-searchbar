@@ -1,5 +1,6 @@
 <template>
 	<div class="container">
+    <selectGenre/>
     <AlbumSection/>
 	</div>
 </template>
@@ -7,12 +8,14 @@
 <script>
 
 import AlbumSection from '../sections/AlbumSection.vue'
+import selectGenre from '../particles/selectGenre.vue'
 
 
 export default {
 	name: "BaseMain",
   components: {
     AlbumSection,
+    selectGenre,
   }
 };
 </script>
@@ -21,11 +24,6 @@ export default {
 
 //MIXIN
 @import '../../assets/style/mixins.scss';
-
-.container {
-  /* background: rgb(23, 23, 52); */
-  height: calc(100vh - 80px);
-}
 
 
 </style>
